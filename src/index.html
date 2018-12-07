@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+     <meta charset="utf-8">
+     <title>Tugas Besar</title>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+     <style>
+     .navbar {
+      border-radius:0;
+     }
+     </style>
+    </head>
+
+    <body ng-app="myapp">
+    
+
+     <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header"><a class="navbar-brand">Order</a></div>
+      <ul class="nav navbar-nav"><li><a ui-sref="beranda">Beranda</a></li><li>
+      <a ui-sref="tentang">List Film</a></li></ul>
+     </nav>
+     
+
+     <div class="container">
+
+      <div ui-view></div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.4.0/restangular.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+     <script src="app.js"></script>
+    </body>
+   </html>
